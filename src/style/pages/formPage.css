@@ -1,0 +1,107 @@
+.formPage-container {
+  background-color: #171717;
+
+  width: 100%;
+  color: white;
+  padding-top: 60px;
+}
+
+.formPage-title {
+  color: white;
+  margin-top: 8%;
+  margin-left: -2%;
+  font-weight: bolder;
+  font-size: 2.5em;
+}
+
+.formPage-white-container {
+  background-color: white;
+
+  width: 95%;
+  margin-left: 2.5%;
+  color: black;
+}
+
+.formPage-sentence-before-completing-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
+
+.formPage-form {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20%;
+}
+
+.formPage-label {
+  display: flex;
+  padding-bottom: 2%;
+  flex-direction: column;
+}
+
+.formPage-input {
+  height: 40px;
+  width: 85%;
+  border: solid 10px;
+  border-image: linear-gradient(to right, #ef4d88 0%, #4e51ff 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  background-color: transparent;
+  color: white;
+}
+
+textarea {
+  width: 85%;
+  height: 130px;
+  border: solid 10px;
+  border-image: linear-gradient(to right, #ef4d88 0%, #4e51ff 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  background-color: transparent;
+  color: white;
+}
+
+.formPage-submit-btn {
+  background: linear-gradient(90deg, #ef4d88 0%, #4e51ff 100%);
+  border-radius: 38px;
+  color: white;
+  width: 20%;
+  height: 2em;
+  font-size: 1.17em;
+  font-weight: bold;
+  border: 1px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 1%;
+  margin-left: 27%;
+}
+
+/**************MEDIA QUERIES*****************/
+
+@media screen and (max-width: 800px) {
+  .formPage-title,
+  .formPage-white-container {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .formPage-title {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  .formPage-submit-btn {
+    font-size: 1em;
+    width: 40%;
+    margin-left: 20%;
+  }
+  .css-1hqxogx {
+    margin-right: 17em;
+  }
+}

@@ -1,0 +1,131 @@
+:root {
+  --color1: #ef4d88;
+  --color1compl: #a4f34e;
+  --color2: #4e51ff;
+  --color2compl: #ffca30;
+  --color3: #fff;
+  --color5: #afafaf;
+}
+
+.bandeau {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.bandeau_Content {
+  display: flex;
+  position: relative;
+}
+
+.bandeau_Content_image {
+  display: flex;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100vw;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.bandeau_Content_Global {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vw;
+  width: 70vw;
+  left: 10vw;
+  margin-top: 2vw;
+}
+
+.bandeau_Content_Title {
+  color: white;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+.bandeau_Content_Title h1 {
+  margin-left: 0;
+}
+
+.bandeau_Content_Subtitle h2 {
+  padding: 0;
+}
+
+.bandeau_Content_Subtitle {
+  color: var(--color3);
+  font-size: 1vw;
+}
+
+.bandeau_Content_Subtitle:hover {
+  opacity: 0.8;
+}
+
+.bandeau_Content_Subtitle_Incoming {
+  color: transparent;
+}
+
+.bandeau_Button {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 35%;
+  top: 68%;
+  justify-content: space-between;
+  left: 10vw;
+}
+
+.bandeau_DetailButton {
+  background: linear-gradient(90deg, rgba(230, 230, 230, 0.62) 0%, rgba(228, 228, 228, 0.31) 100%);
+  border-radius: 38px;
+  color: var(--color3);
+  width: 17vw;
+  height: 3em;
+  font-size: 1.24em;
+  opacity: 0.85;
+  border: 1px;
+  cursor: pointer;
+}
+
+.bandeau_DetailButton:hover {
+  background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 100%);
+}
+
+@media screen and (max-width: 800px) {
+  .bandeau_Content_Global {
+    height: 60vw;
+    text-align: center;
+    left: 15vw;
+    margin-top: 8vw;
+  }
+
+  .bandeau_Content_Title {
+    text-transform: none;
+    letter-spacing: 0.1rem;
+  }
+
+  .bandeau_Content_Title h1 {
+    color: var(--color3);
+  }
+
+  .bandeau_Content_Subtitle {
+    font-size: 0.3em;
+    padding-bottom: 10px;
+  }
+
+  .bandeau_Content_Subtitle_Incoming {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color3);
+  }
+
+  .bandeau_Button {
+    left: 42vw;
+    top: 95%;
+  }
+
+  .bandeau_DetailButton {
+    display: none;
+  }
+}

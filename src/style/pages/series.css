@@ -1,0 +1,24 @@
+.ListSerie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container {
+  padding-top: 60px;
+  background-color: #171717;
+}
+
+.CardSerie {
+  margin: 1.5% 1%;
+}
+
+@media screen and (max-width: 800px) {
+  .ListSerie > .CardSerie {
+    flex-wrap: nowrap;
+    width: 48%;
+    height: 95vw;
+    margin: 3.5% 1%;
+  }
+}

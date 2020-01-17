@@ -1,0 +1,130 @@
+/*  complémentaire ef4d88 => a4f34e  */
+/*  complémentaire 4e51ff => FFCA30  */
+
+:root {
+  --color1: #ef4d88;
+  --color1compl: #a4f34e;
+  --color2: #4e51ff;
+  --color2compl: #ffca30;
+  --color3: #fff;
+  --color4: #000;
+  --color5: #afafaf;
+  /*  color: var(--color1)  */
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+.CardSerie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 12vw;
+}
+
+.CardSerie_InfoCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color3);
+  padding-left: 0.8em;
+  padding-right: 0.5em;
+  padding: 1.5em 0.5em;
+  height: 30px;
+}
+
+.CardSerie_MoreInfos {
+  background-color: var(--color3);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0.8em;
+  padding-right: 0.1em;
+  padding: 1.5em 0.5em;
+  height: 30px;
+}
+
+.CardSerie_TrackItButton {
+  background: linear-gradient(90deg, var(--color1) 0%, var(--color2) 100%);
+  border-radius: 38px;
+  color: var(--color3);
+  width: 45%;
+  height: 2em;
+  font: inherit, medium, 11px;
+  font-size: 0.8em;
+}
+
+.CardSerie_TrackItButtonChange {
+  background: white;
+  margin-bottom: 7%;
+  border-radius: 38px;
+  color: black;
+  width: 45%;
+  height: 2em;
+  font: inherit, medium, 11px;
+  font-size: 0.8em;
+}
+
+/* insert in a new component TrackIt */
+
+.CardSerie_MoreInfos_Button {
+  width: 20px;
+  height: 20px;
+  margin-left: 8%;
+}
+
+.CardSerie_InfoCard_Star {
+  width: 20px;
+  height: 20px;
+  margin: 3% 2% 0 0;
+}
+
+.CardSerie_InfoCard_Div {
+  display: flex;
+  color: var(--color4);
+}
+
+.CardSerie_MoreInfos_Div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.CardSerie_MoreInfos_Div a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 10%;
+}
+
+.CardSerie_MoreInfos_Div p {
+  color: var(--color5);
+  font-size: 0.8em;
+}
+
+.CardSerie_InfoCard h5 {
+  margin-top: 4px;
+  color: var(--color4);
+}
+
+.check {
+  width: 40%;
+}
+
+button:active {
+  outline: 0;
+}
+
+/**************MEDIA QUERIES*****************/
+@media screen and (max-width: 800px) {
+  .CardSerie {
+    display: flex;
+    flex-wrap: wrap;
+    width: 33vw;
+    padding-top: 18px;
+  }
+}

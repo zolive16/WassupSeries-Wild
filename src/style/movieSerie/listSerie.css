@@ -1,0 +1,65 @@
+.ListSerie_main {
+  background-color: #171717;
+  padding-bottom: 2em;
+}
+
+.ListSerie_titleInfo {
+  padding: 2em;
+  display: flex;
+}
+
+.ListSerie-responsive {
+  margin-left: 11%;
+  margin-bottom: 5%;
+}
+
+.ListeSerie_title {
+  color: white;
+  padding-left: 3em;
+}
+
+.white {
+  background-color: WhiteSmoke;
+}
+
+.black {
+  color: black;
+}
+
+.separator {
+  height: 1px;
+  flex-grow: 1;
+  background: linear-gradient(90deg, #ef4d88 0%, #4e51ff 100%);
+  align-self: flex-end;
+  margin-bottom: 0.35em;
+  margin-left: 1.5em;
+}
+
+.mobile_contain {
+  margin-top: 15%;
+}
+
+/**************MEDIA QUERIES*****************/
+@media screen and (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .whitebackground {
+    background-color: WhiteSmoke;
+  }
+
+  .mobile-title {
+    color: black;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .mobile {
+    display: none;
+  }
+}

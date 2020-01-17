@@ -1,0 +1,175 @@
+*:focus {
+  outline: none;
+}
+
+*::-moz-focus-inner {
+  border: none;
+}
+.home_header {
+  background: transparent;
+  display: flex;
+  height: 60px;
+  padding-right: 0;
+  margin-right: 0;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  font-size: 1.5em;
+  align-items: center;
+}
+
+/*logo*/
+
+.home_header_navbar_logo img {
+  height: 35px;
+  width: 35px;
+  display: flex;
+}
+
+.home_header_navbar_logo {
+  display: flex;
+  align-items: center;
+  padding: 0 10vh;
+}
+
+.home_header_navbar_mobile_title {
+  display: none;
+}
+
+/* Nav options : accueil, séries, films*/
+
+.home_header_navbar_onglets {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  width: 10%;
+  margin: 0;
+  font-weight: bold;
+}
+
+.home_header_navbar_list {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 8px;
+  border-radius: 4px;
+  height: 80%;
+  width: 30%;
+}
+
+.home_header_navbar_onglets li {
+  margin: 4vh;
+}
+
+/*search*/
+.home_header_navbar_search {
+  width: 150%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.home_header_navbar_search img {
+  height: 40%;
+}
+
+/* My Tracker button*/
+
+.home_header_navbar_profile_button {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-self: center;
+}
+
+.home_header_navbar_tractIt_button {
+  border: solid 10px;
+  height: 40px;
+  width: 185px;
+  border-image: linear-gradient(to right, #ef4d88 0%, #4e51ff 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/*Profile : access to profile + photo*/
+.home_header_navbar_profile {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.home_header_navbar_profile_photo {
+  align-items: center;
+  width: 24%;
+  border-radius: 45px;
+  margin-right: 8px;
+}
+
+/**************MEDIA QUERIES*****************/
+@media screen and (max-width: 1200px) {
+  .home_header_navbar_onglets li {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /*disparitions*/
+  .home_header_navbar_onglets,
+  .home_header_navbar_profile_button,
+  .home_header_navbar_profile {
+    display: none;
+  }
+
+  /*black navbar*/
+  .home_header {
+    background-color: #171717;
+  }
+
+  /*logo*/
+  .home_header_navbar_search {
+    justify-content: center;
+    padding: 0 0 1px 25%;
+  }
+
+  .home_header_navbar_list {
+    margin: 3px;
+    height: 0;
+    width: 0;
+  }
+
+  /*logo*/
+
+  .home_header_navbar_logo {
+    padding: 0 2vh;
+    background: linear-gradient(to right, #ef4d88 0%, #4e51ff 100%);
+    border-radius: 45px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    margin-left: 2%;
+  }
+
+  .home_header_navbar_logo img {
+    height: 20px;
+    width: 20px;
+  }
+
+  /*title wassupserie*/
+  .home_header_navbar_mobile_title {
+    display: flex;
+    width: 140%;
+  }
+
+  .home_header_navbar_mobile_logo {
+    width: 100%;
+    height: 50%;
+  }
+}
